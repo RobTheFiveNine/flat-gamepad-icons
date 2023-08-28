@@ -3,6 +3,7 @@ declare -a dpis=("50" "96" "150" "300")
 ids=$(grep -oP 'id="(generic|xb|ps|switch)_.+?"' icons.svg | cut -d '"' -f 2)
 
 mkdir -p build
+rm build/*
 
 for dpi in "${dpis[@]}"
 do
