@@ -1,9 +1,12 @@
 gamepad-flat-icons
 ==================
-
 This is a free set of flat icons that can be used in any of your game dev projects - commercial or non-commercial.
 
 This repository contains the source file that the icon set is built from. If you want to download a ready to use set, then head over to the release page on Itch.io.
+
+Sample
+------
+![](sample.png)
 
 
 Naming Convention
@@ -14,7 +17,7 @@ Resolutions
 -----------
 All the icons have a consistent width and height with the exception of the icons representing the shoulder buttons (L1, LB, L) and the generic start and select buttons. These icons, instead, have a width consistent with the rest of the icons, but heights that are unique to them; allowing for consistent horizontal spacing with the rest of the icon set.
 
-The resolution of the icons for each DPI are as folows:
+The resolution of the icons for each DPI are as follows:
 
 - 50dpi: `44x44` (`44x23` for the exceptions listed above)
 - 96dpi:  `84x84` (`84x45` for the exceptions listed above)
