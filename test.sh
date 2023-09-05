@@ -2,11 +2,11 @@
 
 echo -n "Checking file count... "
 file_count=$(ls -A build/ | wc -l)
-if [[ $file_count -eq 196 ]]; then
+if [[ $file_count -eq 425 ]]; then
     echo -e "\xE2\x9C\x94"
 else
     echo -e $"\u274c"
-    echo "    - Expected 196 files but found $file_count"
+    echo "    - Expected 425 files but found $file_count"
 fi
 
 
@@ -17,7 +17,7 @@ for size in 132x132 132x70 264x139 264x264 44x23 44x44 84x45 84x84; do
 done
 
 
-sizes=$(identify build/* | grep -oP "PNG.+?\+" | cut -d " " -f 2 | sort -u)
+sizes=$(identify build/*.png | grep -oP "PNG.+?\+" | cut -d " " -f 2 | sort -u)
 echo -n "Checking icon resolutions... "
 pass=1
 
